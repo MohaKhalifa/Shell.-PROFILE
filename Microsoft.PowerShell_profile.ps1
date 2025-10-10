@@ -11,5 +11,5 @@ function vim {Start-Process "C:\ProgramData\Microsoft\Windows\Start Menu\Program
 
 function lcommit {git init; git add ./*; git commit -m "making the band"; git push;}
 function lpull {git inti; git pull;}
-function shellem {Copy-Item -Path C:\Users\mohat\OneDrive\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1 -Destination C:\Users\mohat\gh\SP\; cd C:\Users\mohat\gh\SP;  lcommit; home; clear}
-function shellme {Start-Process "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Vim 9.1\Vim.lnk" C:\Users\mohat\OneDrive\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1}
+function shellem {Copy-Item -Path $PROFILE -Destination C:\Users\mohat\gh\SP\; cd C:\Users\mohat\gh\SP;  lcommit; home; clear}
+function shellme {Start-Process "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Vim 9.1\Vim.lnk" $PROFILE}
