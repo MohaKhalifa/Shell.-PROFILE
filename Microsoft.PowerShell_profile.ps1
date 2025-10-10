@@ -1,4 +1,4 @@
-function sl {clear}
+function sl {Clear-Host}
 function p { Set-Location .. ; clear; Get-ChildItem;}
 function x {exit}
 function cl { clear; Get-ChildItem}
