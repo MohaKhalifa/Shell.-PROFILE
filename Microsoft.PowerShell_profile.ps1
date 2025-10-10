@@ -13,3 +13,4 @@ function lcommit {git init; git add ./*; git commit -m "making the band"; git pu
 function lpull {git inti; git pull;}
 function shellem {Copy-Item -Path $PROFILE -Destination ~\gh\SP\; cd ~\gh\SP;  lcommit; home; clear}
 function shellme {Start-Process "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Vim 9.1\Vim.lnk" $PROFILE}
+<# https://powershellcommands.com/change-powershell-color #>
