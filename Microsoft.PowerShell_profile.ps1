@@ -6,7 +6,7 @@ function home {cd ~}
 
 
 function hub {cd ~\gh}
-function vim {Start-Process "C:\Program Files\Vim\vim91\vim.exe" }
+function vim {saps "C:\Program Files\Vim\vim91\vim.exe" }
 
 
 function lcommit {git init; git add ./*; git commit -m "making the band"; git push;}
