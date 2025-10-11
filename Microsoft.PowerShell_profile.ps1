@@ -6,7 +6,7 @@ function home {cd ~}
 function offme {Stop-Computer -Force}
 
 
-function hub {cd ~\gh}
+function hub {cd ~\gh; cl}
 function vim {saps "C:\Program Files\Vim\vim91\vim.exe" }
 
 
