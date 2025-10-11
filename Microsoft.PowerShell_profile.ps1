@@ -3,7 +3,7 @@ function p { Set-Location .. ; clear; Get-ChildItem;}
 function x {exit}
 function cl { clear; Get-ChildItem}
 function home {cd ~}
-function offme {Stop-Computer}
+function offme {Stop-Computer -Force}
 
 
 function hub {cd ~\gh}
