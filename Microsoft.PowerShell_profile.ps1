@@ -8,7 +8,7 @@ function offme {Stop-Computer -Force}
 
 function hub {cd ~\gh; cl}
 function man {Get-Help}
-function vim {saps "C:\Program Files\Vim\vim91\vim.exe" }
+<# function vim {saps "C:\Program Files\Vim\vim91\vim.exe" }// ?pid #>
 
 
 function lcommit {git init; git add ./*; git commit -m "making the band"; git push;}
