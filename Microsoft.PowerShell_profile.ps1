@@ -7,6 +7,7 @@ function offme {Stop-Computer -Force}
 
 
 function hub {cd ~\gh; cl}
+function man {Get-Help}
 function vim {saps "C:\Program Files\Vim\vim91\vim.exe" }
 
 
