@@ -30,7 +30,7 @@ echo "" >>index.html;
 echo "" >>index.js;
 echo "" styles.css;
 $companyName = Read-Host 'Company name';
-$commity = echo "A webpage for $companyName created on $currentDateForPage" >> README.md;
+$commity = echo "A webpage for $companyName created on $currentDate" >> README.md;
 git add .\*;
 git commit -m "$commity";
 git add origin main
