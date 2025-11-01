@@ -18,8 +18,7 @@ function book {cd ~\audioBooks; clear}
 
 function hub {cd ~\gh; cl}
 function man {Get-Help -Name}
-function makeGithubWebpage 
-{
+function makeGithubWebpage {
 cd ~\gh;
 $projectname = Read-Host "whats the project name"
 $amiin = gh auth status | Select-Object "Logged in to githu.com account MohaKhalifa"
@@ -28,21 +27,19 @@ cd $projectname;
 if ($amiin -eq $null) 
 {
 gh auth login;
-
+proceedWithIt;
 }
-function proceedWithIt {echo "we making a webpage via and files will be uploaded to github.";
+function proceedWithIt {echo "we making a webpage and, files will be uploaded to github";
 git init;
-<#args for gh repo create; push local repo. get from web and write#>
-echo "" >>index.html;
-<#how to curl<how to download a file it's self in powershell aka refrenced file on the web.> txt and pipe in local file; easy but n lazy gotta get some onions for dinner#>
-echo "" >>index.js;
-echo "" styles.css;
+gh repo create $prjectname --public source=. --remote-upstream; 
+cp ~\base.html >>index.html;
+cp ~\base.js index.js;
+cp ~\base.css styles.css;
 $companyName = Read-Host 'Company name';
 $commity = echo "A webpage for $companyName created on $currentDate" >> README.md;
 git add .\*;
 git commit -m "$commity";
-git add origin main
-git push;
+git push --set-upstream upstream master;
 }
 
 else {
@@ -81,12 +78,13 @@ Do an unlike Bash and brag assigning values.
 B: Get vim navigation in dir;
 C: Get vimrc; show line num in sidebar;
 D: HKLM Manipulation: No activate the color scheme taskbar etc...: cd HKLM:
-
+::E:  <#how to curl<how to download a file it's self in powershell aka refrenced file on the web.> txt and pipe in local file; easy but n lazy gotta get some onions for dinner
 
 TB Declared:
 A: function testit {$timy = Read-Host 'what time do think it is right now'; echo $timy} fetched user input
 B: . $PROFILE reload profile
 C: Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize" -Name "SystemUsesLightTheme" -Value 0 //Changes the system color scheme AKA theme; there's another one for the in application colors; res and up;
 D: use alias for simple command to avoid issues with the file path;
+E: MD man for gh
 
 #>
