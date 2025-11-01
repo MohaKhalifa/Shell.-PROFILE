@@ -52,7 +52,7 @@ function vim {  $nameof = pwd;
 Start-Process "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Vim 9.1\Vim.lnk" $nameof} 
 function lcommit {git init; git add ./*; git commit -m "making the band"; git push;}
 function lpull {git inti; git pull;}
-function shellem {Copy-Item -Path $PROFILE -Destination ~\gh\SP\; cd ~\gh\SP;  lcommit; cd ~; clear; . $PROFILE}
+function shellem {Copy-Item -Path $PROFILE -Destination ~\gh\SP\; cd ~\gh\SP;  lcommit; cd ~; clear; x}
 function shellme {Start-Process "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Vim 9.1\Vim.lnk" $PROFILE}
 function wimip {curl ifconfig.me/ip | Select-Object Content}
 function vscode {  $nameof = pwd; Start-Process  "~\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Visual Studio Code.lnk" $nameof}
