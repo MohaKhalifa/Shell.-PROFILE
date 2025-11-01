@@ -12,7 +12,6 @@ function book {cd ~\audioBooks; clear}
 
 function hub {cd ~\gh; cl}
 function man {Get-Help -Name}
-<# function vim {saps "C:\Program Files\Vim\vim91\vim.exe" }// ?pid #>
 $currentDate = Get-Date
 
 function makeGithubWebpage 
@@ -44,10 +43,7 @@ else {
 proceedWithIt
 }
 }
-<#function testit {$timy = Read-Host 'what time do think it is right now'; echo $timy}#>
-
 function vim {  $nameof = pwd;  Start-Process "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Vim 9.1\Vim.lnk" $nameof} 
-<# how to define a global scope value in PS using$the issue is with $nameof when used outside of the inner function it doesn't call the path#>
 function lcommit {git init; git add ./*; git commit -m "making the band"; git push;}
 function lpull {git inti; git pull;}
 function shellem {Copy-Item -Path $PROFILE -Destination ~\gh\SP\; cd ~\gh\SP;  lcommit; cd ~; clear; . $PROFILE}
@@ -57,3 +53,6 @@ function vscode {  $nameof = pwd; Start-Process  "~\AppData\Roaming\Microsoft\Wi
 <# https://powershellcommands.com/change-powershell-color #>
 <#Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize" -Name "SystemUsesLightTheme" -Value 0#>
 <# . $PROFILE reload profile,#>
+<# how to define a global scope value in PS using$the issue is with $nameof when used outside of the inner function it doesn't call the path for some reason it works with Get-date assigned it to $currentdate; found out you can when you assing path to a variable function recognizes it but when using path it's self it doesn't; expo prior to discovery,need another research;#>
+<#function testit {$timy = Read-Host 'what time do think it is right now'; echo $timy} fetched user input #>
+<# function vim {saps "C:\Program Files\Vim\vim91\vim.exe" }// ?pid #>
