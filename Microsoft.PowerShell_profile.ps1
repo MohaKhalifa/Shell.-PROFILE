@@ -27,6 +27,7 @@ gh auth login;
 function proceedWithIt {echo "we making a webpage via and files will be uploaded to github.";
 git init;
 echo "" >>index.html;
+<#how to curl txt and pipe in local file; easy but n lazy gotta get some onions for dinner#>
 echo "" >>index.js;
 echo "" styles.css;
 $companyName = Read-Host 'Company name';
@@ -34,7 +35,7 @@ $commity = echo "A webpage for $companyName created on $currentDate" >> README.m
 git add .\*;
 git commit -m "$commity";
 git add origin main
-git push;i
+git push;
 }
 else {
 proceedWithIt
