@@ -1,4 +1,5 @@
 function xl {Clear-Host}
+function ll {ls -hidden}
 function p { Set-Location .. ; clear; Get-ChildItem;}
 function x {exit}
 function cl { clear; Get-ChildItem}
