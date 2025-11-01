@@ -24,11 +24,6 @@ $projectname = Read-Host "whats the project name"
 $amiin = gh auth status | Select-Object "Logged in to githu.com account MohaKhalifa"
 mkdir $projectname;
 cd $projectname;
-if ($amiin -eq $null) 
-{
-gh auth login;
-proceedWithIt;
-}
 function proceedWithIt {echo "we making a webpage and, files will be uploaded to github";
 git init;
 gh repo create $prjectname --public source=. --remote-upstream; 
@@ -42,6 +37,12 @@ git commit -m "$commity";
 git push --set-upstream upstream master;
 }
 
+
+if ($amiin -eq $null) 
+{
+gh auth login;
+proceedWithIt;
+}
 else {
 $currentDate = Get-Date;
 proceedWithIt
