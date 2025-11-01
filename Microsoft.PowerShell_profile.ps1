@@ -5,6 +5,7 @@
 <#$nameof = pwd | sls C:#>
 <#appearantly the value of assigned to items gets stored when the shell session starts ///conclution if for loop inefficent that's why you need to put them inside functions BigBrainOnBradFR#>
 
+
 function xl {Clear-Host}
 function ll {ls -hidden}
 function p { Set-Location .. ; clear; Get-ChildItem;}
@@ -13,7 +14,6 @@ function cl { clear; Get-ChildItem}
 function home {cd ~; clear}
 function offme {Stop-Computer -Force}
 function book {cd ~\audioBooks; clear}
-function touch {New-Item}
 
 
 function hub {cd ~\gh; cl}
@@ -77,11 +77,14 @@ A: https://powershellcommands.com/change-powershell-color //P: to change powersh
 ??????:
 A: how to define a global scope value in PS using$the issue is with $nameof when used outside of the inner function it doesn't call the path for some reason it works with Get-date assigned it to $currentdate; found out you can when you assing path to a variable function recognizes it but when using path it's self it doesn't; expo prior to discovery,need another research;
 Do an unlike Bash and brag assigning values.
+B: Get vim navigation in dir;
+C: Get vimrc; show line num in sidebar;
 
 
 TB Declared:
 A: function testit {$timy = Read-Host 'what time do think it is right now'; echo $timy} fetched user input
 B: . $PROFILE reload profile
 C: Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize" -Name "SystemUsesLightTheme" -Value 0 //Changes the system color scheme AKA theme; there's another one for the in application colors; res and up;
+D: use alias for simple command to avoid issues with the file path;
 
 #>
