@@ -13,6 +13,7 @@ function cl { clear; Get-ChildItem}
 function home {cd ~; clear}
 function offme {Stop-Computer -Force}
 function book {cd ~\audioBooks; clear}
+function touch {New-Item}
 
 
 function hub {cd ~\gh; cl}
