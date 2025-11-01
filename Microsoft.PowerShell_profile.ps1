@@ -21,7 +21,7 @@ git init;
 echo "" >>index.html;
 echo "" >>index.js;
 echo "" styles.css;
-$companyName Read-Host 'Company name';
+$companyName = Read-Host 'Company name';
 $currentDateForPage = Get-Date;
 $commity = echo "A webpage for $companyName created on $currentDateForPage" >> README.md;
 git add .\*;
