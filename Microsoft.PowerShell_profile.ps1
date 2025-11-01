@@ -1,5 +1,10 @@
-<#$nameof = pwd | sls C: 
-#>	
+<#ShellProfile, Using a CI/CD approach for less keypresses#> 
+
+
+
+<#$nameof = pwd | sls C:#>
+$currentDate = Get-Date
+
 function xl {Clear-Host}
 function ll {ls -hidden}
 function p { Set-Location .. ; clear; Get-ChildItem;}
@@ -12,8 +17,6 @@ function book {cd ~\audioBooks; clear}
 
 function hub {cd ~\gh; cl}
 function man {Get-Help -Name}
-$currentDate = Get-Date
-
 function makeGithubWebpage 
 {
 cd ~\gh;
@@ -43,13 +46,18 @@ else {
 proceedWithIt
 }
 }
-function vim {  $nameof = pwd;  Start-Process "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Vim 9.1\Vim.lnk" $nameof} 
+function vim {  $nameof = pwd;  
+Start-Process "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Vim 9.1\Vim.lnk" $nameof} 
 function lcommit {git init; git add ./*; git commit -m "making the band"; git push;}
 function lpull {git inti; git pull;}
 function shellem {Copy-Item -Path $PROFILE -Destination ~\gh\SP\; cd ~\gh\SP;  lcommit; cd ~; clear; . $PROFILE}
 function shellme {Start-Process "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Vim 9.1\Vim.lnk" $PROFILE}
 function wimip {curl ifconfig.me/ip | Select-Object Content}
 function vscode {  $nameof = pwd; Start-Process  "~\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Visual Studio Code.lnk" $nameof}
+
+
+
+
 <# https://powershellcommands.com/change-powershell-color #>
 <#Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize" -Name "SystemUsesLightTheme" -Value 0#>
 <# . $PROFILE reload profile,#>
