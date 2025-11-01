@@ -39,7 +39,7 @@ git push;i
 else {
 proceedWithIt
 }
-
+}
 <#function testit {$timy = Read-Host 'what time do think it is right now'; echo $timy}#>
 
 
