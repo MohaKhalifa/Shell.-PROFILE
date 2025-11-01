@@ -31,8 +31,9 @@ gh auth login;
 }
 function proceedWithIt {echo "we making a webpage via and files will be uploaded to github.";
 git init;
+<#args for gh repo create; push local repo. get from web and write#>
 echo "" >>index.html;
-<#how to curl txt and pipe in local file; easy but n lazy gotta get some onions for dinner#>
+<#how to curl<how to download a file it's self in powershell aka refrenced file on the web.> txt and pipe in local file; easy but n lazy gotta get some onions for dinner#>
 echo "" >>index.js;
 echo "" styles.css;
 $companyName = Read-Host 'Company name';
