@@ -69,7 +69,7 @@ $P: Propuse, DL: Deadline
 IDEAS:
 
 A:$compinfo = Get-ComputerInfo reorganize using sls and get imagery thought github with if statemtents create bin and uplead winget. hyg neofetch//:
-
+B::: AYNTKA:::::::::::::::: low very
 
 
 TBDONE:
