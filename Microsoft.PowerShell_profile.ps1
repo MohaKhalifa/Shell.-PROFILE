@@ -59,10 +59,27 @@ function vscode {  $nameof = pwd; Start-Process  "~\AppData\Roaming\Microsoft\Wi
 
 
 
+<#
 
-<# https://powershellcommands.com/change-powershell-color #>
-<#Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize" -Name "SystemUsesLightTheme" -Value 0#>
-<# . $PROFILE reload profile,#>
-<# how to define a global scope value in PS using$the issue is with $nameof when used outside of the inner function it doesn't call the path for some reason it works with Get-date assigned it to $currentdate; found out you can when you assing path to a variable function recognizes it but when using path it's self it doesn't; expo prior to discovery,need another research;#>
-<#function testit {$timy = Read-Host 'what time do think it is right now'; echo $timy} fetched user input #>
-<# function vim {saps "C:\Program Files\Vim\vim91\vim.exe" }// ?pid #>
+$P: Propuse, DL: Deadline 
+
+
+IDEAS:
+
+A:$compinfo = Get-ComputerInfo reorganize using sls and get imagery thought github with if statemtents create bin and uplead winget. hyg neofetch//:
+
+
+TBDONE:
+A: https://powershellcommands.com/change-powershell-color //P: to change powershell coloring;might TBdecalared;
+
+??????:
+A: how to define a global scope value in PS using$the issue is with $nameof when used outside of the inner function it doesn't call the path for some reason it works with Get-date assigned it to $currentdate; found out you can when you assing path to a variable function recognizes it but when using path it's self it doesn't; expo prior to discovery,need another research;
+Do an unlike Bash and brag assigning values.
+
+
+TB Declared:
+A: function testit {$timy = Read-Host 'what time do think it is right now'; echo $timy} fetched user input
+B: . $PROFILE reload profile
+C: Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize" -Name "SystemUsesLightTheme" -Value 0 //Changes the system color scheme AKA theme; there's another one for the in application colors; res and up;
+
+#>
