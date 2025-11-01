@@ -71,6 +71,7 @@ IDEAS:
 A:$compinfo = Get-ComputerInfo reorganize using sls and get imagery thought github with if statemtents create bin and uplead winget. hyg neofetch//:
 
 
+
 TBDONE:
 A: https://powershellcommands.com/change-powershell-color //P: to change powershell coloring;might TBdecalared;
 
@@ -79,6 +80,7 @@ A: how to define a global scope value in PS using$the issue is with $nameof when
 Do an unlike Bash and brag assigning values.
 B: Get vim navigation in dir;
 C: Get vimrc; show line num in sidebar;
+D: HKLM Manipulation: No activate the color scheme taskbar etc...: cd HKLM:
 
 
 TB Declared:
