@@ -10,27 +10,36 @@ function book {cd ~\audioBooks; clear}
 function hub {cd ~\gh; cl}
 function man {Get-Help -Name}
 <# function vim {saps "C:\Program Files\Vim\vim91\vim.exe" }// ?pid #>
-function makeGithubWebpage {git init; cd ~\gh;$amiin = gh auth status | Select-Object "Logged in to githu.com account MohaKhalifa";
-if ($amiin = $null ) 
+$currentDate = Get-Date
+
+function makeGithubWebpage 
 {
-gh auth login
-	}
-else{
-echo "we making a webpage via and files will be uploaded to github.";
+cd ~\gh;
+$projectname = Read-Host "whats the project name"
+$amiin = gh auth status | Select-Object "Logged in to githu.com account MohaKhalifa"
+mkdir $projectname;
+cd $projectname;
+if ($amiin -eq $null) 
+{
+gh auth login;
+
+}
+function proceedWithIt {echo "we making a webpage via and files will be uploaded to github.";
 git init;
 echo "" >>index.html;
 echo "" >>index.js;
 echo "" styles.css;
 $companyName = Read-Host 'Company name';
-$currentDateForPage = Get-Date;
 $commity = echo "A webpage for $companyName created on $currentDateForPage" >> README.md;
 git add .\*;
 git commit -m "$commity";
 git add origin main
-git push;
-	}
-
+git push;i
 }
+else {
+proceedWithIt
+}
+
 <#function testit {$timy = Read-Host 'what time do think it is right now'; echo $timy}#>
 
 
