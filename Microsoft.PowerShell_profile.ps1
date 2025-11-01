@@ -3,7 +3,7 @@
 
 
 <#$nameof = pwd | sls C:#>
-$currentDate = Get-Date
+<#appearantly the value of assigned to items gets stored when the shell session starts ///conclution if for loop inefficent that's why you need to put them inside functions BigBrainOnBradFR#>
 
 function xl {Clear-Host}
 function ll {ls -hidden}
@@ -42,7 +42,9 @@ git commit -m "$commity";
 git add origin main
 git push;
 }
+
 else {
+$currentDate = Get-Date;
 proceedWithIt
 }
 }
