@@ -56,7 +56,7 @@ proceedWithIt
 }
 function vim {  $nameof = pwd;  
 Start-Process "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Vim 9.1\Vim.lnk" $nameof} 
-function lcommit {git init; git add ./*; git commit -m "making the band"; git push;}
+function lcommit { $currenttime = Get-Date; git init; git add ./*; git commit -m $currenttime; git push}
 function lpull {git init; git pull;}
 function shellem {Copy-Item -Path $PROFILE -Destination ~\gh\SP\; cd ~\gh\SP;  lcommit; cd ~; clear; x}
 function shellme {Start-Process "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Vim 9.1\Vim.lnk" $PROFILE; clear}
