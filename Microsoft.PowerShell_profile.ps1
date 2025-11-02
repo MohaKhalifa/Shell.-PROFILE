@@ -1,5 +1,5 @@
 <#ShellProfile, Using a CI/CD approach for less keypresses#> 
-
+$curdate = Get-Date;
 
 
 <#$nameof = pwd | sls C:#>
@@ -31,7 +31,9 @@ cp ~\bases\base.html >>index.html;
 cp ~\bases\base.js index.js;
 cp ~\bases\base.css styles.css;
 $companyName = Read-Host 'Company name';
-$commity = echo "A webpage for $companyName created on $currentDate" >> README.md;
+$commity = echo "A webpage for $companyName created on $currentDate"; 
+$commity >> README.md;
+<#10minutes in comity and -m#>
 git add .\*;
 git commit -m $commity;
 git push --set-upstream upstream master;
