@@ -18,7 +18,7 @@ function book {cd ~\audioBooks; clear}
 
 function hub {cd ~\gh; cl}
 function man {Get-Help -Name}
-function makeGithubWebpage {
+function pm {
 cd ~\gh;
 $projectname = Read-Host "whats the project name"
 $amiin = gh auth status | Select-Object "Logged in to githu.com account MohaKhalifa"
@@ -38,7 +38,10 @@ git add .\*;
 git commit -m $commity;
 git push --set-upstream upstream master;
 }
-<#githubpages and powershell; for public repos#  condition the public and private.# and condition the page #>
+<#githubpages and powershell; for public repos#  condition the public and private.# and condition the pag
+
+AYNTKA; gb; roadmaps and link clou; make structure with pm;
+e #>
 
 
 if ($amiin -eq $null) 
@@ -90,5 +93,8 @@ B: . $PROFILE reload profile
 C: Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize" -Name "SystemUsesLightTheme" -Value 0 //Changes the system color scheme AKA theme; there's another one for the in application colors; res and up;
 D: use alias for simple command to avoid issues with the file path;
 E: MD man for gh
+F: rm -recurse -force dir and files PS;
+
+
 
 #>
