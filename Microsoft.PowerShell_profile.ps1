@@ -27,7 +27,7 @@ cd $projectname;
 function proceedWithIt {echo "we making a webpage and, files will be uploaded to github";
 git init;
 gh repo create $prjectname --public --source=. --remote=upstream; <#get Some Education on the remote upstream etc.. debugged for 5 miniutes#>
-cp ~\bases\base.html >>index.html;
+cp ~\bases\base.html index.html;
 cp ~\bases\base.js index.js;
 cp ~\bases\base.css styles.css;
 $companyName = Read-Host 'Company name';
