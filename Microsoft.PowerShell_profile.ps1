@@ -38,6 +38,7 @@ git add .\*;
 git commit -m $commity;
 git push --set-upstream upstream master;
 }
+<#githubpages and powershell; for public repos#  condition the public and private.# and condition the page #>
 
 
 if ($amiin -eq $null) 
