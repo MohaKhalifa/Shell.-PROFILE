@@ -74,6 +74,7 @@ IDEAS:
 
 A:$compinfo = Get-ComputerInfo reorganize using sls and get imagery thought github with if statemtents create bin and uplead winget. hyg neofetch//:
 B::: AYNTKA:::::::::::::::: low very
+C: make scriptPS: ls ~\gh, index each; check repo uptodate with main. if more dif; Decision Lcommit/Lpush
 
 
 TBDONE:
