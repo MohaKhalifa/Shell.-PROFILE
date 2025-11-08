@@ -3,7 +3,11 @@ $curdate = Get-Date;
 
 
 <#$nameof = pwd | sls C:#>
-<#appearantly the value of assigned to items gets stored when the shell session starts ///conclution if for loop inefficent that's why you need to put them inside functions BigBrainOnBradFR#>
+<#
+start interactive session in ps; argumental program
+
+
+appearantly the value of assigned to items gets stored when the shell session starts ///conclution if for loop inefficent that's why you need to put them inside functions BigBrainOnBradFR#>
 
 
 function xl {Clear-Host}
