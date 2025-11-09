@@ -6,6 +6,10 @@ $curdate = Get-Date;
 <#
 start interactive session in ps; argumental program
 
+TD:
+Create an extention for definitions using duckduckgo search make it lightweight add event listener for selected items;
+make sure no conflictions are made; beware vimium and ytstuff upload on chrome webstore and ff
+
 
 appearantly the value of assigned to items gets stored when the shell session starts ///conclution if for loop inefficent that's why you need to put them inside functions BigBrainOnBradFR#>
 
