@@ -22,7 +22,7 @@ add history, remiders if possible;
 use apis if possible; make accs or local files easily syncronizable;
 idnetify articles level using llm and scope hard words; highlit the words you had in the past;
 market the stuff; project
-
+onclick 1: show; Onclick 2 hide; counter for the same word;
 Only when toggled on; retreive only if user wants to;
 
 Related books; Articles; Goodreads;
