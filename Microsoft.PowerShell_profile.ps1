@@ -10,6 +10,8 @@ start interactive session in ps; argumental program
 
 
 Get SQL;
+??? foss backend users can verify;
+
 TD:
 A:______: DL:Novemeber 30th the basic: finale Project ToBD 
 Languages: HTML, CSS, JS, Node.js, Flutter
