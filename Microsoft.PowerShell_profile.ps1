@@ -11,6 +11,7 @@ start interactive session in ps; argumental program
 
 Get SQL;
 ??? foss backend users can verify;
+?git on own webpage;
 
 TD:
 A:______: DL:Novemeber 30th the basic: finale Project ToBD 
@@ -32,7 +33,9 @@ Articulations
 use cases;
 examples
 
+
 B: Make Responise UI for ADB;
+
 
 
 
