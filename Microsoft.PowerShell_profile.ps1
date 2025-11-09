@@ -6,14 +6,29 @@ $curdate = Get-Date;
 <#
 start interactive session in ps; argumental program
 
+
+
+
+Get SQL;
 TD:
 A:______: DL:Novemeber 30th the basic: finale Project ToBD 
+Languages: HTML, CSS, JS, Node.js, Flutter
 Create an extention for definitions using duckduckgo search make it lightweight add event listener for selected items;
 make sure no conflictions are made; beware vimium and ytstuff upload on chrome webstore and ff
 add history, remiders if possible;
 use apis if possible; make accs or local files easily syncronizable;
 idnetify articles level using llm and scope hard words; highlit the words you had in the past;
 market the stuff; project
+
+Only when toggled on; retreive only if user wants to;
+
+Related books; Articles; Goodreads;
+Book summmaries;
+Social Media idioligies adapted;
+how to get clout with the stuff;;
+Articulations
+use cases;
+examples
 
 
 appearantly the value of assigned to items gets stored when the shell session starts ///conclution if for loop inefficent that's why you need to put them inside functions BigBrainOnBradFR#>
