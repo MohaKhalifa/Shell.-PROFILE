@@ -8,7 +8,9 @@ start interactive session in ps; argumental program
 
 
 
-
+?save swap files with powershell; currently active programms pre poweroff;
+Littleshellscript Linkedined everyday;
+stack them and post them add popup and switched if on post without pop up else awaite for approval;
 Get SQL;
 ??? foss backend users can verify;
 ?git on own webpage;
