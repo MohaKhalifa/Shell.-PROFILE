@@ -37,7 +37,7 @@ examples
 
 
 B: Make Responise UI for ADB;
-
+C: Nodes on html updated with >> links adjustable; argumentive; make db for them;
 
 
 
