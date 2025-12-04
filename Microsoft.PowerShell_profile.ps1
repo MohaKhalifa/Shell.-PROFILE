@@ -17,7 +17,7 @@ Get SQL;
 
 TD:
 A:______: DL:Novemeber 30th the basic: finale Project ToBD 
-Languages: HTML, CSS, JS, Node.js, Flutter
+
 Create an extention for definitions using duckduckgo search make it lightweight add event listener for selected items;
 make sure no conflictions are made; beware vimium and ytstuff upload on chrome webstore and ff
 add history, remiders if possible;
