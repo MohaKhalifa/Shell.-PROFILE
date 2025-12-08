@@ -48,7 +48,12 @@ https://code.visualstudio.com/docs/reference/default-keybindings
 globalize the lil;
 make vim command: >> vscodeExtention, settings\find: vimrc, 
 esc;append:: ctrl enter; https://alldrops.info/posts/vim-drops/2018-05-15_understand-vim-mappings-and-create-your-own-shortcuts/ 
-vscode:interactions and vimium make ui editor and fetcher. setup. fffu
+p: check if clipboard inlast 2min; if not p check quee the last one pasted;;
+fffu vscode:interactions vim make ui editor and fetcher maker. setup. new js framework; 
+ref: https://code.visualstudio.com/docs/reference/default-keybindings
+navigation for windows all interactions of the keyboard are through it syscalls
+
+
 #>
 
 
