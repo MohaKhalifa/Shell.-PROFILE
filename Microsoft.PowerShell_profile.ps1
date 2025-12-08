@@ -48,7 +48,7 @@ https://code.visualstudio.com/docs/reference/default-keybindings
 globalize the lil;
 make vim command: >> vscodeExtention, settings\find: vimrc, 
 esc;append:: ctrl enter; https://alldrops.info/posts/vim-drops/2018-05-15_understand-vim-mappings-and-create-your-own-shortcuts/ 
-
+vscode:interactions and vimium make ui editor and fetcher. setup. fffu
 #>
 
 
