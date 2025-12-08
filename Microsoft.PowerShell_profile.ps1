@@ -41,7 +41,12 @@ C: Nodes on html updated with >> links adjustable; argumentive; make db for them
 
 
 
-appearantly the value of assigned to items gets stored when the shell session starts ///conclution if for loop inefficent that's why you need to put them inside functions BigBrainOnBradFR#>
+appearantly the value of assigned to items gets stored when the shell session starts ///conclution if for loop inefficent that's why you need to put them inside functions BigBrainOnBradFR
+
+VSCode shortcuts list:
+https://code.visualstudio.com/docs/reference/default-keybindings
+
+#>
 
 
 function xl {Clear-Host}
