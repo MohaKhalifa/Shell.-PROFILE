@@ -64,7 +64,7 @@ function cl { clear; Get-ChildItem}
 function home {cd ~; clear}
 function offme {Stop-Computer -Force}
 function book {cd ~\audioBooks; clear}
-function gp {cd ~\Desktop\AOSAV}
+function proj {cd ~\Desktop\AOSAV; ls}
 
 function hub {cd ~\gh; cl}
 function man {Get-Help -Name}
