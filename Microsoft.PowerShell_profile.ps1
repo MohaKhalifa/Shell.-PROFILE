@@ -1,6 +1,4 @@
 <#ShellProfile, Using a CI/CD approach for less keypresses#> 
-$curdate = Get-Date;
-
 
 <#$nameof = pwd | sls C:#>
 <#
@@ -54,9 +52,10 @@ ref: https://code.visualstudio.com/docs/reference/default-keybindings
 navigation for windows all interactions of the keyboard are through it syscalls
 
 
-#>
-
-
+#> 
+# Currentdate For Files
+$curdateff = function daterInRealTime {Get-Date};
+$curdate = {Get-Date}
 function xl {Clear-Host}
 function ll {ls -hidden}
 function p { Set-Location .. ; clear; Get-ChildItem;}
@@ -65,7 +64,7 @@ function cl { clear; Get-ChildItem}
 function home {cd ~; clear}
 function offme {Stop-Computer -Force}
 function book {cd ~\audioBooks; clear}
-
+function gp {cd ~\Desktop\AOSAV}
 
 function hub {cd ~\gh; cl}
 function man {Get-Help -Name}
