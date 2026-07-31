@@ -65,7 +65,7 @@ function home {cd ~; clear}
 function offme {Stop-Computer -Force}
 function book {cd ~\audioBooks; clear}
 function proj {cd C:\xampp\htdocs\TestProject ;clear; ls}
-function projcommit { cd ~\Desktop\GP.separate\picktrain\; cp C:\xampp\htdocs\TestProject\ . -Recurse -Force; lcommit; echo 'project updated in GitHub PickTrain'}
+function projcommit { cd ~\Desktop\GP.separate\picktrain\; rm* -recurse; cp C:\xampp\htdocs\TestProject\* . -Recurse -Force; lcommit; echo 'project updated in GitHub PickTrain'}
 function hub {cd ~\gh; cl}
 function man {Get-Help -Name}
 function pm {
