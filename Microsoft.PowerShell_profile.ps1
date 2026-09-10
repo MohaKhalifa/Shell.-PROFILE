@@ -69,6 +69,7 @@ function proj {cd C:\xampp\htdocs\TestProject ;clear; ls}
 function codecount {(ls -recurse -file -include *.php, *.js, *.html, *.css, *.gitignor, *.md, .txt | cat ).count}
 function hub {cd ~\gh; cl}
 function man {Get-Help -Name}
+function sl {clear}
 function pm {
 cd ~\gh;
 $projectname = Read-Host "whats the project name"
